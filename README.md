@@ -52,7 +52,7 @@ Need help? Try #logstash on freenode IRC or the https://discuss.elastic.co/c/log
 
 ## Developing
 
-### 1. Plugin Developement and Testing
+### 1. Plugin Development and Testing
 
 #### Code
 - To get started, you'll need JRuby with the Bundler gem installed.
@@ -66,17 +66,7 @@ bundle install
 
 #### Test
 
-- Update your dependencies
-
-```sh
-bundle install
-```
-
-- Run tests
-
-```sh
-bundle exec rspec
-```
+Unit test development in progress.
 
 ### 2. Running your unpublished Plugin in Logstash
 
