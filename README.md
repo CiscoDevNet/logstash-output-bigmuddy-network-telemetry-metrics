@@ -6,7 +6,7 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 
 ## Documentation
 
-This output plugin takes a streaming telemetry event, ferrets out any numeric fields, and `PUT|POST`s events in metric format to a configured URL over HTTP. The default format of the posted content is that accepted by the `prometheus` `pushgw`, but multiple types of consumers are supported (e.g. signalfx).
+This output plugin takes a streaming telemetry event, ferrets out any numeric fields, and `PUT|POST`s events in time series metric format (e.g [prometheus](http://prometheus.io/docs/concepts/data_model/#metric-names-and-labels),[signalfx](https://support.signalfx.com/hc/en-us/articles/201270489-Use-the-SignalFx-REST-API)) to a configured URL over HTTP. The default format of the posted content is that accepted by the `prometheus` `pushgw`, but multiple types of consumers are supported (e.g. signalfx).
 
 HTTP headers, the URL, and the HTTP operation can all be customised. All the [HTTP mixin client](https://github.com/logstash-plugins/logstash-mixin-http_client) options and the underlying [Manticore](https://github.com/cheald/manticore) client options are supported (e.g. proxy configuration, number of parallel in flight operations, client certificate, cookie support etc).
 
